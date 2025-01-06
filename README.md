@@ -9,9 +9,11 @@ Existe uma `Solution Folder` para cada um dos princípios do SOLID, e cada exerc
 Na branch `main`, encontram-se os exercícios a serem realizados.
 Clone ou faça um fork desta branch para realizar os exercícios.
 
-No tópico [Exercícios](#exercícios) estão listados todos os exercícios, explicando o que deverá ser feito em cada um. Há também dicas disponíveis para cada exercício, que estão ocultas — evite usá-las sem necessidade para treinar melhor seus conhecimentos.
+_Se você ainda não fez os exercícios, vá agora pra branch `main` e retorne para a branch `solution` apenas quando finalizá-los._
 
 Na branch `solution`, encontram-se possíveis soluções para os exercícios para serem utilizadas de base na validação.
+
+No tópico [Exercícios](#exercícios) estão listadas as explicações da solução de cada exercício.
 
 ## Exercícios
 
@@ -19,42 +21,32 @@ Na branch `solution`, encontram-se possíveis soluções para os exercícios par
 
 #### Exercício 1
 
-A classe `User` viola o SRP. Refatore o código aplicando o Princípio de Responsabilidade Única.
+A classe `User` violava o SRP, pois estava lidando tanto com lógica de negócios quanto com a persistência de dados.
 
-<details>
-<summary>Dica</summary>
+Explicação da solução:
+- A classe `User` agora é apenas um modelo de dados.
+- A classe `UserValidator` é responsável apenas por validar as regras de negócio do usuário.
+- A classe `UserRepository` cuida apenas da persistência dos dados.
 
-A classe `User` viola o SRP, pois está lidando tanto com lógica de negócios quanto com a persistência de dados.
-
-Separe as preocupações de validação e persistência de dados em classes diferentes.
-
-</details>
+Isso garante que cada classe tenha uma única responsabilidade, facilitando manutenção e testes.
 
 #### Exercício 2
 
-A classe `SalaryCalculator` viola o SRP. Refatore o código aplicando o Princípio de Responsabilidade Única.
+A classe `SalaryCalculator` violava o SRP porque estava misturando a lógica de cálculo com a exibição do resultado.
 
-<details>
-<summary>Dica</summary>
+Explicação da solução:
+- A classe `SalaryCalculator` agora é responsável apenas por realizar cálculos.
+- A classe `SalaryPresenter` é responsável pela exibição dos resultados.
 
-A classe `SalaryCalculator` viola o SRP porque está misturando a lógica de cálculo com a exibição do resultado.
-
-Separe a lógica de cálculo e a exibição do resultado.
-
-</details>
+Isso separa as responsabilidades, facilitando a manutenção e testes.
 
 #### Exercício 3
 
-A classe `SalaryCalculator` viola o SRP. Refatore o código aplicando o Princípio de Responsabilidade Única.
+A classe `ReportGenerator` violava o SRP porque possuia um método muito extenso que realizava várias tarefas.
 
-<details>
-<summary>Dica</summary>
-
-A classe `ReportGenerator` viola o SRP porque possui um método muito extenso que realiza várias tarefas.
-
-Divida o método `GenerateReport` em métodos privados menores que realizam tarefas específicas dentro da mesma classe.
-
-</details>
+Explicação da solução:
+- O método `GenerateReport` foi dividido em métodos privados menores (`ProcessData`, `CreateReport`, `SendReport`) que realizam tarefas específicas.
+- Isso melhora a legibilidade, facilita a manutenção e torna o código mais organizado.
 
 ## Referências
 

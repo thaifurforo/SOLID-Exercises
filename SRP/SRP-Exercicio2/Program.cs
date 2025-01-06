@@ -5,11 +5,12 @@ public class Program
     public static void Main(string[] args)
     {
         var calculator = new SalaryCalculator();
+        var presenter = new SalaryPresenter();
 
         try
         {
             double hourlyRate = calculator.CalculateHourlyRate(50000);
-            Console.WriteLine($"Calculation completed. Hourly rate: {hourlyRate}");
+            presenter.DisplayHourlyRate(hourlyRate);
         }
         catch (Exception ex)
         {

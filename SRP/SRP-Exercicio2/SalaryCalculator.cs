@@ -9,8 +9,6 @@ public class SalaryCalculator
             throw new Exception("Annual salary must be greater than zero.");
         }
 
-        double hourlyRate = annualSalary / 2080;
-        Console.WriteLine($"The hourly rate is: {hourlyRate}");
-        return hourlyRate;
+        return annualSalary / 2080;
     }
 }

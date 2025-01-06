@@ -6,13 +6,28 @@ public class ReportGenerator
     {
         Console.WriteLine("Starting report generation...");
 
-        string processedData = data.ToUpper();
-        Console.WriteLine("Data processed.");
+        string processedData = ProcessData(data);
+        string report = CreateReport(processedData);
+        SendReport(report);
 
-        string report = $"Report: {processedData}";
-        Console.WriteLine("Report created.");
+        Console.WriteLine("Report generation completed.");
+    }
 
-        Console.WriteLine($"Sending report: {report}");
-        Console.WriteLine("Report sent.");
+    private static string ProcessData(string data)
+    {
+        Console.WriteLine("Processing data...");
+        return data.ToUpper();
+    }
+
+    private static string CreateReport(string processedData)
+    {
+        Console.WriteLine("Creating report...");
+        return $"Report: {processedData}";
+    }
+
+    private static void SendReport(string report)
+    {
+        Console.WriteLine("Sending report...");
+        Console.WriteLine($"Report: {report}");
     }
 }
