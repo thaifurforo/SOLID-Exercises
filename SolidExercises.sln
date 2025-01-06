@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SRP", "SRP", "{D57838E1-8BC5-4B42-A637-0F5A161F0F61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRP-Exercicio1", "SRP\SRP-Exercicio1\SRP-Exercicio1.csproj", "{3E4AA0F9-A175-4A90-9E23-B336BC0062B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRP-Exercicio2", "SRP\SRP-Exercicio2\SRP-Exercicio2.csproj", "{FEBD667B-425F-438F-9752-3CE6CF5A1F56}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SRP-Exercicio3", "SRP\SRP-Exercicio3\SRP-Exercicio3.csproj", "{149E6BC6-D3F2-4376-AE40-59E4C45C6DC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E4AA0F9-A175-4A90-9E23-B336BC0062B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E4AA0F9-A175-4A90-9E23-B336BC0062B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E4AA0F9-A175-4A90-9E23-B336BC0062B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E4AA0F9-A175-4A90-9E23-B336BC0062B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEBD667B-425F-438F-9752-3CE6CF5A1F56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBD667B-425F-438F-9752-3CE6CF5A1F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBD667B-425F-438F-9752-3CE6CF5A1F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBD667B-425F-438F-9752-3CE6CF5A1F56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{149E6BC6-D3F2-4376-AE40-59E4C45C6DC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{149E6BC6-D3F2-4376-AE40-59E4C45C6DC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{149E6BC6-D3F2-4376-AE40-59E4C45C6DC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{149E6BC6-D3F2-4376-AE40-59E4C45C6DC2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E4AA0F9-A175-4A90-9E23-B336BC0062B8} = {D57838E1-8BC5-4B42-A637-0F5A161F0F61}
+		{FEBD667B-425F-438F-9752-3CE6CF5A1F56} = {D57838E1-8BC5-4B42-A637-0F5A161F0F61}
+		{149E6BC6-D3F2-4376-AE40-59E4C45C6DC2} = {D57838E1-8BC5-4B42-A637-0F5A161F0F61}
+	EndGlobalSection
+EndGlobal
